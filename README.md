@@ -59,14 +59,14 @@ Then I must be presented with a list of all products
 ```
 
 Notes:
- * A list of products can be found in `packages/api/products.json`. This should be treated as the data source for the api.
- * Display the following properties for all products
-    ~ name
-    ~ description
-    ~ category
-    ~ color
-    ~ price
-    ~ inStock
+ 1. A list of products can be found in `packages/api/products.json`. This should be treated as the data source for the api.
+ 2. Display the following properties for all products
+    - name
+    - description
+    - category
+    - color
+    - price
+    - inStock
     
 ### #2
 
