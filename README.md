@@ -6,7 +6,7 @@ This repo contains the source for the Dunelm pairing exercise. Here's some usefu
 
 1. This is a monorepo containing the following services
 - api - a node service written using [expressjs](https://expressjs.com/) and responsible for retrieving and returning product data
-- aggregator - a node service written using [expressjs](https://expressjs.com/) and [apollo](https://www.apollographql.com/docs/) responsible for aggregating services (the api service)
+- aggregator - a [GraphQL](https://graphql.org/) node service written using [expressjs](https://expressjs.com/) and [apollo](https://www.apollographql.com/docs/) responsible for aggregating services (the api service)
 - app - a web application written using [react](https://reactjs.org/docs/getting-started.html)
     
 2. You can find these services within the `packages` folder.
@@ -42,7 +42,7 @@ Running the application will start all the services and open your browser at htt
 * Use all your tools (git etc.) appropriately.
 * Feel free to google if you need additional information.
 * Install [npm](https://www.npmjs.com/) dependencies if needed.
-* If you're unsure about anything during the exercise then please ask as many questions as you need.
+* If you're unsure about anything during the exercise then please ask for clarification.
 
 ```
 As a Dunelm customer
