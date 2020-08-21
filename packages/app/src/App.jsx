@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-const Home = (props) => {
+const App = (props) => {
   const [state, setState] = useState({
     message: null,
     loading: true,
@@ -22,9 +21,9 @@ const Home = (props) => {
           variables: {
           },
           query: `
-            query {
-              message
-            }`,
+          query {
+            message
+          }`,
         })
       })
 
@@ -49,15 +48,5 @@ const Home = (props) => {
 
   return (<h1>{state.message}</h1>)
 }
-
-const App = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/">
-        <Home/>
-      </Route>
-    </Switch>
-  </BrowserRouter>
-)
 
 export default App
