@@ -1,0 +1,18 @@
+# Transient directories
+node_modules
+coverage
+
+# IDE
+.idea
+
+# Output
+dist
+
+# Temp files
+.pid
+.DS_Store
+.env
+
+# Log
+yarn-error.log
+.tmp.*

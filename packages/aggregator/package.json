@@ -1,0 +1,17 @@
+{
+  "name": "aggregator",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "PORT=3001 nodemon --watch src --ignore src/__tests__"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.16.1",
+    "express": "^4.17.1",
+    "graphql": "^14.7.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {}
+}
