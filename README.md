@@ -4,12 +4,13 @@ This repo contains the source for the Dunelm pairing exercise. Here's some usefu
 
 ## Description
 
-* This is a monorepo containing the following services;
-    ~ api - a node service written using [expressjs](https://expressjs.com/) and responsible for retrieving and returning product data
-    ~ aggregator - a node service written using [expressjs](https://expressjs.com/) and [apollo](https://www.apollographql.com/docs/) responsible for aggregating services (the api service)
-    ~ app - a web application written using [react](https://reactjs.org/docs/getting-started.html)
+1. This is a monorepo containing the following services
+- api - a node service written using [expressjs](https://expressjs.com/) and responsible for retrieving and returning product data
+- aggregator - a node service written using [expressjs](https://expressjs.com/) and [apollo](https://www.apollographql.com/docs/) responsible for aggregating services (the api service)
+- app - a web application written using [react](https://reactjs.org/docs/getting-started.html)
     
-You can find these services within the `packages` folder. The architecture of these services is as follows.
+2. You can find these services within the `packages` folder.
+3. The architecture of these services is as follows.
 
 ```
 +---------------+        +---------------+        +---------------+
@@ -23,7 +24,7 @@ You can find these services within the `packages` folder. The architecture of th
 +---------------+        +---------------+        +---------------+
 ```
 
-Note: If you don't have any experience with GraphQL please feel free to bypass the `aggregator` and call the `api` directly. You can find instructions on how to achieve this in `packages/app/src/App.jsx`.
+4. If you don't have any experience with GraphQL please feel free to bypass the `aggregator` and call the `api` directly. You can find instructions on how to achieve this in `packages/app/src/App.jsx` and `jest.config.js`.
 
 ## Setup
 
@@ -34,7 +35,9 @@ Note: If you don't have any experience with GraphQL please feel free to bypass t
 
 Running the application will start all the services and open your browser at http://localhost:3000. All services are watched using `webpack` or `nodemon` respectively so whilst developing there should be no need to restart. The same goes for your tests.
 
-## Story
+## Exercise
+
+If you're unsure about anything during the exercise then please feel free to ask as many questions as you need.
 
 ```
 As a Dunelm customer
@@ -42,9 +45,7 @@ I want to view all products
 So that I can choose which ones to buy
 ```
 
-Note: If you're unsure about anything during the exercise then please feel free to ask as many questions as you need.
-
-### Exercice #1
+### #1
 
 ```
 Given I have accessed the Dunelm website
@@ -62,7 +63,7 @@ Notes:
     ~ price
     ~ inStock
     
-### Exercise #2
+### #2
 
 ```
 Given I have accessed the Dunelm website
@@ -73,6 +74,6 @@ Then I must be presented with a list of products available to purchase
 
 Notes: buyable products are those which have their `inStock` property set to `true`.
 
-### Excercise #3
+### #3
 
 What are the top three things you could do to improve your solution?
