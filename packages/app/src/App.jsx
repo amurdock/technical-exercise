@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Header from './Header'
 
 const App = (props) => {
   const [state, setState] = useState({
@@ -20,8 +21,7 @@ const App = (props) => {
         body: JSON.stringify({
           variables: {
           },
-          query: `
-          query {
+          query: `query {
             message
           }`,
         })
@@ -46,7 +46,7 @@ const App = (props) => {
     return null
   }
 
-  return (<h1>{state.message}</h1>)
+  return <Header message={state.message} />
 }
 
 export default App

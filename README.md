@@ -37,7 +37,12 @@ Running the application will start all the services and open your browser at htt
 
 ## Exercise
 
-If you're unsure about anything during the exercise then please feel free to ask as many questions as you need.
+* Please approach the exercise in the same way you would when writing software commercially.
+* Write tests if you feel they're required.
+* Use all your tools (git etc.) appropriately.
+* Feel free to google if you need additional information.
+* Install [npm](https://www.npmjs.com/) dependencies if needed.
+* If you're unsure about anything during the exercise then please ask as many questions as you need.
 
 ```
 As a Dunelm customer
@@ -54,7 +59,7 @@ Then I must be presented with a list of all products
 ```
 
 Notes:
- * A list of products can be found in `packages/api/products.json`
+ * A list of products can be found in `packages/api/products.json`. This should be treated as the data source for the api.
  * Display the following properties for all products
     ~ name
     ~ description
