@@ -13,18 +13,17 @@ const App = (props) => {
       setState({ ...state, loading: true })
 
       // 1. retrieve data via graphql
-      const response = await fetch('/graphql',{
+      const response = await fetch('/graphql', {
         method: 'post',
         headers: {
           'content-type': 'application/json',
         },
         body: JSON.stringify({
-          variables: {
-          },
+          variables: {},
           query: `query {
             message
           }`,
-        })
+        }),
       })
 
       // 2. alternatively retrieve data directly from the api

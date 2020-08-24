@@ -3,11 +3,14 @@
   "scripts": {
     "clean": "git clean -dfqX -- ./node_modules **/{dist,node_modules}/",
     "start": "wsrun --parallel start",
-    "test": "yarn workspaces run test"
+    "test": "wsrun --parallel test",
+    "format": "prettier --write ."
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "jest": "^26.4.1",
     "nodemon": "^2.0.4",
+    "prettier": "^2.1.0",
     "wsrun": "^5.2.1"
   },
   "workspaces": [
