@@ -1,1 +1,3 @@
-describe('api', () => {})
+describe('api', () => {
+  it('should pass', () => {})
+})

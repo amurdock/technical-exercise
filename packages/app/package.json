@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --port 3000 --config=webpack.js",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "core-js": "^3.6.5",

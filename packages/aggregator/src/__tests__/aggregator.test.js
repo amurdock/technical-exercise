@@ -1,1 +1,3 @@
-describe('aggregator', () => {})
+describe('aggregator', () => {
+  it('should pass', () => {})
+})

@@ -1,1 +1,3 @@
-describe('app', () => {})
+describe('app', () => {
+  it('should pass', () => {})
+})
